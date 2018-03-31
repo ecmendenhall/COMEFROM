@@ -1,3 +1,3 @@
 # COMEFROM
 ## Completely Online Milgram Experiment For Researching Obedience to Machines
-![Soldiers](doc/images/example.png)
+<img alt="Soldiers" src="doc/images/example.png" width="500" />

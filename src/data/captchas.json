@@ -4,7 +4,7 @@
       "type": "recognition", 
       "subject": "soldiers", 
       "imagePath": "./images/soldiers.jpg",
-      "width": 4
+      "width": 5
     }
   ]
 }

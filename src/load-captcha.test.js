@@ -5,5 +5,5 @@ it('loads a captcha', () => {
   expect(captcha.type).toEqual("recognition");
   expect(captcha.subject).toEqual("soldiers");
   expect(captcha.imagePath).toEqual("./images/soldiers.jpg");
-  expect(captcha.width).toEqual(4);
+  expect(captcha.width).toEqual(5);
 });

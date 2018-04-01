@@ -14,7 +14,8 @@ const referenceLines = (imageWidth, numSquares) => {
 
 const sliceImage = (imagePath, imageWidth, squares, callback) => {
   const lines = referenceLines(imageWidth, squares);
-  imageToSlices(imagePath, lines, lines, {saveToDataUrl: true}, callback);
+  const image = require(`${ imagePath }`);
+  imageToSlices(image, lines, lines, {saveToDataUrl: true}, callback);
 };
 
 export { sliceImage as default, referenceLines };

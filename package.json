@@ -19,6 +19,8 @@
   },
   "devDependencies": {
     "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1"
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "20.1.0-alpha.3",
+    "react-styleguidist": "6.5.3"
   }
 }

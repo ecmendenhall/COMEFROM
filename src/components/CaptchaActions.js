@@ -7,11 +7,15 @@ import InfoOutlineIcon from 'material-ui-icons/InfoOutline';
 
 import styled from 'styled-components';
 
+const ButtonContainer = styled.span`
+  margin-left: auto;
+`;
+
 class CaptchaActions extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <span>
           <IconButton>
             <RefreshIcon />
@@ -20,12 +24,12 @@ class CaptchaActions extends Component {
             <InfoOutlineIcon />
           </IconButton>
         </span>
-        <span>
-          <Button variant="raised" color="primary">
+        <ButtonContainer>
+          <Button variant="raised" color="primary" size="large">
             Skip
           </Button>
-        </span>
-      </div>
+        </ButtonContainer>
+      </React.Fragment>
       );
     }
   }

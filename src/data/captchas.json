@@ -2,8 +2,20 @@
   "captchas": [
     {
       "type": "recognition", 
-      "subject": "soldiers", 
+      "subject": "soldiers",
       "imagePath": "./images/soldiers.jpg",
+      "width": 5
+    },
+    {
+      "type": "recognition", 
+      "subject": "sleeping", 
+      "imagePath": "./images/sleeping.png",
+      "width": 4
+    },
+    {
+      "type": "recognition", 
+      "subject": "signs", 
+      "imagePath": "./images/signs.jpg",
       "width": 5
     }
   ]

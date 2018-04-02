@@ -11,7 +11,7 @@ const Container = styled.div`
 
 class App extends Component {
   render() {
-  	let captchaData = loadCaptcha(0);
+  	let captchaData = loadCaptcha(Math.round(Math.random() * 2));
     return (<Container><Captcha captcha={ captchaData } /></Container>);
   }
 }

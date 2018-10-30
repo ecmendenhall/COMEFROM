@@ -1,6 +1,6 @@
-import loadCaptcha from './load-captcha';
+import loadCaptcha from "./load-captcha";
 
-it('loads a captcha', () => {
+it("loads a captcha", () => {
   const captcha = loadCaptcha(0);
   expect(captcha.type).toEqual("recognition");
   expect(captcha.subject).toEqual("soldiers");

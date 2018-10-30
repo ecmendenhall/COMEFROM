@@ -1,6 +1,6 @@
-import { referenceLines } from './slice-image';
+import { referenceLines } from "./slice-image";
 
-it('calculates reference lines based on width', () => {
+it("calculates reference lines based on width", () => {
   let lines = referenceLines(600, 1);
   expect(lines).toEqual([]);
 

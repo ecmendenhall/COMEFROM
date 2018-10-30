@@ -7,40 +7,20 @@ import sliceImage from '../slice-image';
 
 class Captcha extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      images: []
-    };
-    this.loadImages = this.loadImages.bind(this);
-  }
-
-  componentDidMount() {
-    sliceImage(
-      this.props.captcha.imagePath, 
-      600, 
-      this.props.captcha.width,
-      this.loadImages
-    );
-  }
-
-  loadImages(images) {
-    this.setState({images: images});
-  }
-
   render() {
     return (
       <Card raised={ true }>
         <CardContent>
           <CaptchaCopy captcha={ this.props.captcha } />
-          <ImageGrid cols={ this.props.captcha.width } images={ this.state.images } />
+          <ImageGrid cols={ this.props.captcha.width } images={ this.props.captcha.images } />
         </CardContent>
         <CardActions>
-          <CaptchaActions />
+          <CaptchaActions load={ this.props.load } />
         </CardActions>
       </Card>
       );
     }
+
   }
 
   export default Captcha;

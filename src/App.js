@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import loadCaptcha from './load-captcha';
-import Captcha from './components/Captcha';
+import { loadRandomCaptcha } from './load-captcha';
+import CaptchaContainer from './components/CaptchaContainer';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -11,8 +11,7 @@ const Container = styled.div`
 
 class App extends Component {
   render() {
-  	let captchaData = loadCaptcha(Math.round(Math.random() * 2));
-    return (<Container><Captcha captcha={ captchaData } /></Container>);
+    return (<Container><CaptchaContainer load={ loadRandomCaptcha } /></Container>);
   }
 }
 

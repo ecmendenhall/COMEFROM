@@ -18,14 +18,14 @@ class CaptchaActions extends Component {
       <React.Fragment>
         <span>
           <IconButton>
-            <RefreshIcon />
+            <RefreshIcon onClick={ this.props.load }/>
           </IconButton>
           <IconButton>
             <InfoOutlineIcon />
           </IconButton>
         </span>
         <ButtonContainer>
-          <Button variant="raised" color="primary" size="large">
+          <Button onClick={ this.props.load } variant="raised" color="primary" size="large">
             Skip
           </Button>
         </ButtonContainer>

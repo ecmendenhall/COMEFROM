@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Card from 'material-ui/Card';
+
 import Captcha from './Captcha'
 import ImageGrid from './ImageGrid';
 
@@ -26,5 +27,3 @@ it('renders a raised Card', () => {
   const captcha = shallow(<Captcha captcha={ captchaData } />);
   expect(captcha.find(Card).prop('raised')).toEqual(true);
 });
-
-
